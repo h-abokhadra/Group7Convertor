@@ -7,10 +7,12 @@ using System.Threading.Tasks;
 //Hoda - Riyadh - Vlada - Kimberly
 namespace Group7Convertor
 {
-    class Program
+    class Convertor
     {
         static void Main(string[] args)
         {
+
+
         }
     }
 }
