@@ -13,26 +13,38 @@ namespace Group7Convertor
         {
 
 
+            Console.WriteLine("Welcome, please choose an operation \n");
+
+            //Displaying the operations list for the user
+
             Console.WriteLine("Press 1 for Addition \n");
             Console.WriteLine("Press 2 for Subtraction \n");
             Console.WriteLine("Press 3 for Multiplication \n");
             Console.WriteLine("Press 4 for Division \n");
             Console.WriteLine("Press 5 for Modulus \n");
-            Console.WriteLine("Press 6 for Factorial \n");
-            Console.WriteLine("Press 7 for Absolute \n");
-            Console.WriteLine("Press 8 for Power \n");
-            Console.WriteLine("Press 9 for Exponential \n");
-            Console.WriteLine("Press 10 for DividedByX \n");
-            Console.WriteLine("Press 11 for Log \n");
-            Console.WriteLine("Press 12 for Ln \n");
-            Console.WriteLine("Press 13 for SquareRoot\n");
+            Console.WriteLine("Press 6 for Power \n");
+            Console.WriteLine("Press 7 for Exponential \n");
+            Console.WriteLine("Press 8 for DividedByX \n");
+            Console.WriteLine("Press 9 for Log \n");
+            Console.WriteLine("Press 10 for Ln \n");
+            Console.WriteLine("Press 11 for SquareRoot \n");
+            Console.WriteLine("Press 12 for Factorial \n");
+            Console.WriteLine("Press 13 for Absolute \n");
 
-            double action = Convert.ToInt32(Console.ReadLine());
+            //Taking user inputs 
+      
             Console.WriteLine("Enter the 1st number");
             double num1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter the operation number");
+            int action = Convert.ToInt32(Console.ReadLine());
+
             Console.WriteLine("Enter the 2nd number");
             double num2 = Convert.ToInt32(Console.ReadLine());
+
             double result = 0;
+
+            //Switch statement for all the operations.
             switch (action)
             {
                 case 1:
@@ -101,7 +113,7 @@ namespace Group7Convertor
                         break;
                     }
                 default:
-                    Console.WriteLine("Wrong input!! please try again");
+                    Console.WriteLine("Wrong input, please try again");
                     break;
             }
             Console.WriteLine("The result is {0}", result);
