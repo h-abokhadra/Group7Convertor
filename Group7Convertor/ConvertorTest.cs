@@ -33,9 +33,9 @@ namespace Group7Convertor
             x = x % y;
             return x;
         }
-        static int Factorial(int x)
+        static double Factorial(double x)
         {
-            int fact = 1;
+            double fact = 1;
             for (int i = 1; i <= x; i++)
             {
                 fact *= i;
@@ -47,7 +47,7 @@ namespace Group7Convertor
             x = Math.Abs(x);
             return x;
         }
-        static double Power(double x, int y)
+        static double Power(double x, double y)
         {
             x = Math.Pow(x, y);
             return x;

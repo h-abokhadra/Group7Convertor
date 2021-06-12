@@ -11,7 +11,7 @@ namespace Group7Convertor
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome, please choose a command: \n");
+
 
             Console.WriteLine("Press 1 for Addition \n");
             Console.WriteLine("Press 2 for Subtraction \n");
@@ -27,36 +27,81 @@ namespace Group7Convertor
             Console.WriteLine("Press 12 for Ln \n");
             Console.WriteLine("Press 13 for SquareRoot\n");
 
-            int action = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter 1st input");
-            int input_1 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter 2nd input");
-            int input_2 = Convert.ToInt32(Console.ReadLine());
-            int result = 0;
+            double action = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the 1st number");
+            double num1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the 2nd number");
+            double num2 = Convert.ToInt32(Console.ReadLine());
+            double result = 0;
             switch (action)
             {
                 case 1:
                     {
-                        result = ConvertorTest.Addition(input_1, input_2);
+                        result = ConvertorTest.Addition(num1, num2);
                         break;
                     }
                 case 2:
                     {
-                        result = Subtraction(input_1, input_2);
+                        result = ConvertorTest.Addition(num1, num2);
                         break;
                     }
                 case 3:
                     {
-                        result = Multiplication(input_1, input_2);
+                        result = ConvertorTest.Addition(num1, num2);
                         break;
                     }
                 case 4:
                     {
-                        result = Division(input_1, input_2);
+                        result = ConvertorTest.Addition(num1, num2);
+                        break;
+                    }
+                case 5:
+                    {
+                        result = ConvertorTest.Addition(num1, num2);
+                        break;
+                    }
+                case 6:
+                    {
+                        result = ConvertorTest.Addition(num1, num2);
+                        break;
+                    }
+                case 7:
+                    {
+                        result = ConvertorTest.Addition(num1, num2);
+                        break;
+                    }
+                case 8:
+                    {
+                        result = ConvertorTest.Addition(num1, num2);
+                        break;
+                    }
+                case 9:
+                    {
+                        result = ConvertorTest.Addition(num1, num2);
+                        break;
+                    }
+                case 10:
+                    {
+                        result = ConvertorTest.Addition(num1, num2);
+                        break;
+                    }
+                case 11:
+                    {
+                        result = ConvertorTest.Addition(num1, num2);
+                        break;
+                    }
+                case 12:
+                    {
+                        result = ConvertorTest.Addition(num1, num2);
+                        break;
+                    }
+                case 13:
+                    {
+                        result = ConvertorTest.Addition(num1, num2);
                         break;
                     }
                 default:
-                    Console.WriteLine("Wrong action!! try again");
+                    Console.WriteLine("Wrong input!! please try again");
                     break;
             }
             Console.WriteLine("The result is {0}", result);
