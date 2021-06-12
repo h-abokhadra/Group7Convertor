@@ -42,62 +42,62 @@ namespace Group7Convertor
                     }
                 case 2:
                     {
-                        result = ConvertorTest.Addition(num1, num2);
+                        result = ConvertorTest.Substraction(num1, num2);
                         break;
                     }
                 case 3:
                     {
-                        result = ConvertorTest.Addition(num1, num2);
+                        result = ConvertorTest.Multiplication(num1, num2);
                         break;
                     }
                 case 4:
                     {
-                        result = ConvertorTest.Addition(num1, num2);
+                        result = ConvertorTest.Division(num1, num2);
                         break;
                     }
                 case 5:
                     {
-                        result = ConvertorTest.Addition(num1, num2);
+                        result = ConvertorTest.Modulus(num1, num2);
                         break;
                     }
                 case 6:
                     {
-                        result = ConvertorTest.Addition(num1, num2);
+                        result = ConvertorTest.Power(num1, num2);
                         break;
                     }
                 case 7:
                     {
-                        result = ConvertorTest.Addition(num1, num2);
+                        result = ConvertorTest.Exponential(num1);
                         break;
                     }
                 case 8:
                     {
-                        result = ConvertorTest.Addition(num1, num2);
+                        result = ConvertorTest.DividedByX(num1);
                         break;
                     }
                 case 9:
                     {
-                        result = ConvertorTest.Addition(num1, num2);
+                        result = ConvertorTest.Log(num1);
                         break;
                     }
                 case 10:
                     {
-                        result = ConvertorTest.Addition(num1, num2);
+                        result = ConvertorTest.Ln(num1);
                         break;
                     }
                 case 11:
                     {
-                        result = ConvertorTest.Addition(num1, num2);
+                        result = ConvertorTest.SquareRoot(num1);
                         break;
                     }
                 case 12:
                     {
-                        result = ConvertorTest.Addition(num1, num2);
+                        result = ConvertorTest.Factorial(num1);
                         break;
                     }
                 case 13:
                     {
-                        result = ConvertorTest.Addition(num1, num2);
+                        result = ConvertorTest.Absolute(num1);
                         break;
                     }
                 default:

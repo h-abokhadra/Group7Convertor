@@ -33,20 +33,7 @@ namespace Group7Convertor
             x = x % y;
             return x;
         }
-        static double Factorial(double x)
-        {
-            double fact = 1;
-            for (int i = 1; i <= x; i++)
-            {
-                fact *= i;
-            }
-            return fact;
-        }
-        static double Absolute(double x)
-        {
-            x = Math.Abs(x);
-            return x;
-        }
+
         static double Power(double x, double y)
         {
             x = Math.Pow(x, y);
@@ -75,6 +62,20 @@ namespace Group7Convertor
         static double SquareRoot(double x)
         {
             x = Math.Sqrt(x);
+            return x;
+        }
+        static double Factorial(double x)
+        {
+            double fact = 1;
+            for (int i = 1; i <= x; i++)
+            {
+                fact *= i;
+            }
+            return fact;
+        }
+        static double Absolute(double x)
+        {
+            x = Math.Abs(x);
             return x;
         }
 
