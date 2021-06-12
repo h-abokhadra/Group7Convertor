@@ -8,63 +8,63 @@ namespace Group7Convertor
 {
     class ConvertorTest
     {
-        static double Addition(double x, double y)
+       public static double Addition(double x, double y)
         {
             x += y;
             return x;
         }
-        static double Substraction(double x, double y)
+        public static double Substraction(double x, double y)
         {
             x -= y;
             return x;
         }
-        static double Multiplication(double x, double y)
+        public static double Multiplication(double x, double y)
         {
             x *= y;
             return x;
         }
-        static double Division(double x, double y)
+        public static double Division(double x, double y)
         {
             x /= y;
             return x;
         }
-        static double Modulus(double x, double y)
+        public static double Modulus(double x, double y)
         {
             x = x % y;
             return x;
         }
 
-        static double Power(double x, double y)
+        public static double Power(double x, double y)
         {
             x = Math.Pow(x, y);
             return x;
         }
-        static double Exponential(double x)
+        public static double Exponential(double x)
         {
             x = Math.Exp(x);
             return x;
         }
-        static double DividedByX(double x)
+        public static double DividedByX(double x)
         {
             x = 1 / x;
             return x;
         }
-        static double Log(double x)
+        public static double Log(double x)
         {
             x = Math.Log(x, 10);
             return x;
         }
-        static double Ln(double x)
+        public static double Ln(double x)
         {
             x = Math.Log(x);
             return x;
         }
-        static double SquareRoot(double x)
+        public static double SquareRoot(double x)
         {
             x = Math.Sqrt(x);
             return x;
         }
-        static double Factorial(double x)
+        public static double Factorial(double x)
         {
             double fact = 1;
             for (int i = 1; i <= x; i++)
@@ -73,7 +73,7 @@ namespace Group7Convertor
             }
             return fact;
         }
-        static double Absolute(double x)
+        public static double Absolute(double x)
         {
             x = Math.Abs(x);
             return x;
