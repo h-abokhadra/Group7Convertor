@@ -31,19 +31,23 @@ namespace Group7Convertor
             Console.WriteLine("Press 12 for Factorial \n");
             Console.WriteLine("Press 13 for Absolute \n");
 
+          
+            double result = 0;
+
             //Taking user inputs 
-      
             Console.WriteLine("Enter the 1st number");
             double num1 = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("Enter the operation number");
             int action = Convert.ToInt32(Console.ReadLine());
 
+            if (action >= 7) { 
+
             Console.WriteLine("Enter the 2nd number");
             double num2 = Convert.ToInt32(Console.ReadLine());
 
-            double result = 0;
-
+         
+            
             //Switch statement for all the operations.
             switch (action)
             {
