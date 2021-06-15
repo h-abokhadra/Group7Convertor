@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 //This program is for creating a convertor application.
+// Group 7: Vlada, Riyadh, Kimberly, Hoda
 //Author: Hoda Abokhadra, June 2021
 
 
@@ -39,7 +40,7 @@ namespace Group7Convertor
             Console.WriteLine("Press 12 for Factorial \n");
             Console.WriteLine("Press 13 for Absolute \n");
 
-            while (UserAction)
+            while (UserAction) //While loop in case the user wanted to make more than one mathematical operation.
             {
                 //Taking user inputs 
                 Console.WriteLine("Enter the 1st number");
@@ -54,7 +55,7 @@ namespace Group7Convertor
                     Console.WriteLine("Enter the 2nd number");
                     num2 = Convert.ToInt32(Console.ReadLine());
 
-                    //Switch statement for all the operations.
+                    //Switch statement for operations with 2 inputs.
                     switch (action)
                     {
                         case 1:
@@ -97,7 +98,7 @@ namespace Group7Convertor
                 {
 
 
-                    switch (action)
+                    switch (action) //Switch statement for operations with 1 input.
                     {
 
                         case 7:
@@ -140,12 +141,16 @@ namespace Group7Convertor
                             break;
                     }
                 }
+
+                //Displaying the results
                 Console.WriteLine("The result is {0}", result);
                 Console.ReadKey();
+
+                //Asking the user if he\she is willing to do another operation
                 Console.WriteLine("Would you like to do another operation? write yes OR no");
                 string userAct = Console.ReadLine();
 
-                if (userAct == "no")
+                if (userAct == "no") // if no exit the while loop
                 {
 
                     break;

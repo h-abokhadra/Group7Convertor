@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+//Authors: Riyadh, Vlada, May 2021
+
 namespace Group7Convertor
 {
     class ConvertorTest
