@@ -15,6 +15,11 @@ namespace Group7Convertor
         static void Main(string[] args)
         {
 
+            double result = 0;
+            double num1;
+            double num2;
+            int action;
+            bool UserAction = true;
 
             Console.WriteLine("Welcome, please choose an operation \n");
 
@@ -34,115 +39,119 @@ namespace Group7Convertor
             Console.WriteLine("Press 12 for Factorial \n");
             Console.WriteLine("Press 13 for Absolute \n");
 
-          
-            double result = 0;
-            double num1;
-            double num2;
-            int action;
-
-
-
-            //Taking user inputs 
-            Console.WriteLine("Enter the 1st number");
-            num1 = Convert.ToInt32(Console.ReadLine());
-
-            Console.WriteLine("Enter the operation number");
-            action = Convert.ToInt32(Console.ReadLine());
-
-
-            if (action < 7)
+            while (UserAction)
             {
-                Console.WriteLine("Enter the 2nd number");
-                num2 = Convert.ToInt32(Console.ReadLine());
+                //Taking user inputs 
+                Console.WriteLine("Enter the 1st number");
+                num1 = Convert.ToInt32(Console.ReadLine());
 
-                //Switch statement for all the operations.
-                switch (action)
+                Console.WriteLine("Enter the operation number");
+                action = Convert.ToInt32(Console.ReadLine());
+
+
+                if (action < 7)
                 {
-                    case 1:
-                        {
-                            result = ConvertorTest.Addition(num1, num2);
+                    Console.WriteLine("Enter the 2nd number");
+                    num2 = Convert.ToInt32(Console.ReadLine());
+
+                    //Switch statement for all the operations.
+                    switch (action)
+                    {
+                        case 1:
+                            {
+                                result = ConvertorTest.Addition(num1, num2);
+                                break;
+                            }
+                        case 2:
+                            {
+                                result = ConvertorTest.Substraction(num1, num2);
+                                break;
+                            }
+                        case 3:
+                            {
+                                result = ConvertorTest.Multiplication(num1, num2);
+                                break;
+                            }
+                        case 4:
+                            {
+                                result = ConvertorTest.Division(num1, num2);
+                                break;
+                            }
+                        case 5:
+                            {
+                                result = ConvertorTest.Modulus(num1, num2);
+                                break;
+                            }
+                        case 6:
+                            {
+                                result = ConvertorTest.Power(num1, num2);
+                                break;
+                            }
+                        default:
+                            Console.WriteLine("Wrong input, please try again");
                             break;
-                        }
-                    case 2:
-                        {
-                            result = ConvertorTest.Substraction(num1, num2);
-                            break;
-                        }
-                    case 3:
-                        {
-                            result = ConvertorTest.Multiplication(num1, num2);
-                            break;
-                        }
-                    case 4:
-                        {
-                            result = ConvertorTest.Division(num1, num2);
-                            break;
-                        }
-                    case 5:
-                        {
-                            result = ConvertorTest.Modulus(num1, num2);
-                            break;
-                        }
-                    case 6:
-                        {
-                            result = ConvertorTest.Power(num1, num2);
-                            break;
-                        }
-                    default:
-                        Console.WriteLine("Wrong input, please try again");
-                        break;
+                    }
                 }
-            }
 
-            else if (action >= 7)
-            {
-
-
-                switch (action)
+                else if (action >= 7)
                 {
 
-                    case 7:
-                        {
-                            result = ConvertorTest.Exponential(num1);
+
+                    switch (action)
+                    {
+
+                        case 7:
+                            {
+                                result = ConvertorTest.Exponential(num1);
+                                break;
+                            }
+                        case 8:
+                            {
+                                result = ConvertorTest.DividedByX(num1);
+                                break;
+                            }
+                        case 9:
+                            {
+                                result = ConvertorTest.Log(num1);
+                                break;
+                            }
+                        case 10:
+                            {
+                                result = ConvertorTest.Ln(num1);
+                                break;
+                            }
+                        case 11:
+                            {
+                                result = ConvertorTest.SquareRoot(num1);
+                                break;
+                            }
+                        case 12:
+                            {
+                                result = ConvertorTest.Factorial(num1);
+                                break;
+                            }
+                        case 13:
+                            {
+                                result = ConvertorTest.Absolute(num1);
+                                break;
+                            }
+                        default:
+                            Console.WriteLine("Wrong input, please try again");
                             break;
-                        }
-                    case 8:
-                        {
-                            result = ConvertorTest.DividedByX(num1);
-                            break;
-                        }
-                    case 9:
-                        {
-                            result = ConvertorTest.Log(num1);
-                            break;
-                        }
-                    case 10:
-                        {
-                            result = ConvertorTest.Ln(num1);
-                            break;
-                        }
-                    case 11:
-                        {
-                            result = ConvertorTest.SquareRoot(num1);
-                            break;
-                        }
-                    case 12:
-                        {
-                            result = ConvertorTest.Factorial(num1);
-                            break;
-                        }
-                    case 13:
-                        {
-                            result = ConvertorTest.Absolute(num1);
-                            break;
-                        }
-                    default:
-                        Console.WriteLine("Wrong input, please try again");
-                        break;
+                    }
                 }
+                Console.WriteLine("The result is {0}", result);
+                Console.ReadKey();
+                Console.WriteLine("Would you like to do another operation? write yes OR no");
+                string userAct = Console.ReadLine();
+
+                if (userAct == "no")
+                {
+
+                    break;
+                }
+
             }
-            Console.WriteLine("The result is {0}", result);
-            Console.ReadKey();
         }
 
     }
