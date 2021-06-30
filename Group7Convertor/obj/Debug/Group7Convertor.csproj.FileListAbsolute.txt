@@ -1,0 +1,7 @@
+C:\Users\MAIN\Documents\GitHub\Group7Convertor\Group7Convertor\bin\Debug\Group7Convertor.exe.config
+C:\Users\MAIN\Documents\GitHub\Group7Convertor\Group7Convertor\bin\Debug\Group7Convertor.exe
+C:\Users\MAIN\Documents\GitHub\Group7Convertor\Group7Convertor\bin\Debug\Group7Convertor.pdb
+C:\Users\MAIN\Documents\GitHub\Group7Convertor\Group7Convertor\obj\Debug\Group7Convertor.csprojAssemblyReference.cache
+C:\Users\MAIN\Documents\GitHub\Group7Convertor\Group7Convertor\obj\Debug\Group7Convertor.csproj.CoreCompileInputs.cache
+C:\Users\MAIN\Documents\GitHub\Group7Convertor\Group7Convertor\obj\Debug\Group7Convertor.exe
+C:\Users\MAIN\Documents\GitHub\Group7Convertor\Group7Convertor\obj\Debug\Group7Convertor.pdb
