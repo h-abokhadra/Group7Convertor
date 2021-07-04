@@ -10,6 +10,8 @@ namespace Group7Convertor
 {
     class ConvertorTest
     {
+        //this method is for adding 2 numbers (doubles)
+
        public static double Addition(double x, double y)
         {
             x += y;
