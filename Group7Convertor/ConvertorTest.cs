@@ -17,16 +17,21 @@ namespace Group7Convertor
             x += y;
             return x;
         }
+        //this method is for Substracting 2 numbers (doubles)
         public static double Substraction(double x, double y)
         {
             x -= y;
             return x;
         }
+        
+        //this method is for multiplicating 2 numbers (doubles)
         public static double Multiplication(double x, double y)
         {
             x *= y;
             return x;
         }
+
+        //this method is for dividing 2 numbers (doubles)
         public static double Division(double x, double y)
         {
             x /= y;
